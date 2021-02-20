@@ -26,10 +26,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 58%;
+    width: 50%;
 }
 .instagram-phone{
-    height: 50%;
+    height: 50rem;
 }
 
 .instagram-continue{
@@ -43,16 +43,16 @@ body{
 
 .group{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     background-color: #ffffff;
     width: 100%;
     padding: 1.3rem 0;
-    border: 1px solid lightslategray;
+    border: 1px solid lightgray;
 }
 
-.group: :nth-child(1){
+.group:nth-child(1){
     min-height: 19rem;
 }
 .instagram-logo {
@@ -69,4 +69,87 @@ body{
 
 .profile-photo img {
     height: 6rem;
+}
+
+.instagram-login {
+    background-color: #0895f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+ .instagram-logout {
+     color: #0895f6;
+     margin-top: 1rem;
+     
+ }
+
+ .not-account{
+     color: rgb(160, 160, 160);
+ }
+ 
+ .link-blue{
+     color: #0895f6;
+ }
+
+ .get-the-app{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     padding: 1.3rem 0;
+ }
+
+ .download {
+     display: flex;
+     width: 100%;
+     justify-content: space-evenly];
+     align-items: center;
+     padding: 1rem;
+ }
+
+ .app-download{
+     height: 4rem;
+     width: 18rem;
+     background-size: cover;
+ }
+
+ .app-download:nth-child(1){
+     background-image: url('apple-button.jpg');
+ }
+ .app-download:nth-child(2){
+    background-image: url('google-button.jpg');
+}
+
+/*Responsividade para dispositivos móveis*/
+
+@media (max-width: 1024px) {
+    .instagram-wrapper
+{
+    width: 90%;
+    }
+}
+
+@media (max-width: 650px){
+    body{
+        background-color: #ffffff;
+    }
+
+    .group{
+        border: none;
+    }
+
+    .instagram-wrapper{
+        width: 90%;
+    }
+
+    .instagram-phone{
+        display: none;
+    }
+    .instagram-continue {
+        width: 100%;
+    }
+    .app-download{
+        width: 100%;
+    }
 }
